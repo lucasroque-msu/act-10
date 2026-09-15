@@ -23,13 +23,3 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover -s tests -p '*_test.py'
-
-Settings:
-    Branches:
-        Add branch ruleset:
-            Ruleset Name: main
-            Target branches:
-                Add target:
-                    Include by pattern: main
-                Require status checks to pass before merging:
-                    Add checks: Run Tests on Push to Main
